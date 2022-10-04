@@ -1,8 +1,5 @@
 import { useRouter } from 'next/router';
-import lifting from '../../public/images/services/lifting.jpg';
-import fabrication from '../../public/images/services/fabrication.jpg';
-import dredging from '../../public/images/services/dredging.jpg';
-import reclamation from '../../public/images/services/reclamation.png';
+
 import ServiceCard from '../Service/ServiceCard';
 
 const HomeServices = () => {
