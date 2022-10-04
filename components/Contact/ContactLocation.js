@@ -1,14 +1,6 @@
 /* eslint-disable max-len */
 import { memo } from 'react';
 
-const defaultProps = {
-  center: {
-    lat: -1.2435408876438203,
-    long: 116.85990315277877,
-  },
-  zoom: 11,
-};
-
 const ContactLocation = () => (
   <div className="w-full py-20 bg-gray-100 flex justify-center items-center xl:bg-white">
     <div className="flex flex-col justify-center items-center w-[22rem] md:w-[40rem] lg:w-[50rem] xl:w-[60rem]">

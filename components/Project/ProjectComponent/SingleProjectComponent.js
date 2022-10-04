@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const SingleProjectComponent = ({
-  year, companyName, description, projectName, image, alt
+  year, companyName, description, projectName, image, alt,
 }) => (
   <>
     <div className="flex flex-row w-full">
