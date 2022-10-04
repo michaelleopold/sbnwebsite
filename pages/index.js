@@ -14,6 +14,7 @@ import boosterPic from '../public/images/boosterpump.png';
 import HomeHeaderContent from '../components/Home/HomeHeaderContent';
 import HomeServices from '../components/Home/HomeServices';
 import HomeExperience from '../components/Home/HomeExperience';
+import HomeProjectListHorizontal from '../components/Home/HomeProjectListHorizontal';
 
 export default function Home() {
   return (
@@ -49,6 +50,10 @@ export default function Home() {
 
         <section id="our-services">
           <HomeServices />
+        </section>
+
+        <section id="our-projects">
+          <HomeProjectListHorizontal />
         </section>
 
       </main>
