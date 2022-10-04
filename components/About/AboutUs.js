@@ -10,7 +10,7 @@ const StoryAbout = () => (
         <h1 className="mt-2 font-bold text-3xl text-gray-900 text-center xl:text-left">Our Story</h1>
         <h1 className="hidden xl:block text-[#0094DF] text-xl">(Know More About PT. SBN)</h1>
         <p className="mt-5 text-gray-500 text-justify text-lg md:text-xl">
-        PT. Samudera Biru Nusantara (SBN) is a privately owned independent company in Indonesia established since 2000. We have specializing in 2 main scopes of business, namely <h1 className="inline font-bold text-gray-600">slurry & dewatering services</h1> and <h1 className="inline font-bold text-gray-600">underwater & marine services</h1>.
+        PT. Samudera Biru Nusantara (SBN) is a privately owned independent company in Indonesia established since 2000. We have specializing in 2 main scopes of business, namely <span className="inline font-bold text-gray-600">slurry & dewatering services</span> and <span className="inline font-bold text-gray-600">underwater & marine services</span>.
         </p>
         <p className="text-gray-500 text-justify mt-5 text-lg md:text-xl">
         SBN is experienced in working on slurry and water management in mining, sand pumping, dredging, land reclamation, construction, and oil and gas industries. With quality pump units and a reliable and professional team, SBN provides a total solution for your pumping problems.
