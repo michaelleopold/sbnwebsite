@@ -1,8 +1,9 @@
 import ServiceCard from './ServiceCard';
-import lifting from '../../public/images/services/lifting.jpg';
-import dredging from '../../public/images/services/dredging.jpg';
-import reclamation from '../../public/images/services/reclamation.png';
-import fabrication from '../../public/images/services/fabrication.jpg';
+
+const lifting = './images/services/lifting.jpg';
+const dredging = './images/services/dredging.jpg';
+const reclamation = './images/services/reclamation.png';
+const fabrication = './images/services/fabrication.jpg';
 
 const ServiceContent = () => (
   <>
@@ -19,20 +20,20 @@ const ServiceContent = () => (
       </div>
 
       <div className="flex md:hidden flex-col w-[30rem] items-center pt-20 space-y-12">
-        <ServiceCard title="MINE PUMP" image={lifting} description="Complete Slurry or Mud removal, Dewatering removal, others." />
-        <ServiceCard title="DREDGING" image={dredging} description="All types of dredging including silting of the jetty area, silting of the path to the jetty, and others." />
-        <ServiceCard title="SAND PUMP & RECLAMATION" image={reclamation} description="Pumping sand as construction sand, quartz sand, complete reclamation, others." />
-        <ServiceCard title="FABRICATION" image={fabrication} description="We can manufacture mine slurry pumps, dewatering pumps, sand pumps, slurry tanks, pontoons and more." />
+        <ServiceCard title="MINE PUMP" alt="mine pump" image={lifting} description="Complete Slurry or Mud removal, Dewatering removal, others." />
+        <ServiceCard title="DREDGING" alt="dredging" image={dredging} description="All types of dredging including silting of the jetty area, silting of the path to the jetty, and others." />
+        <ServiceCard title="SAND PUMP & RECLAMATION" alt="sand pump" image={reclamation} description="Pumping sand as construction sand, quartz sand, complete reclamation, others." />
+        <ServiceCard title="FABRICATION" alt="fabrication" image={fabrication} description="We can manufacture mine slurry pumps, dewatering pumps, sand pumps, slurry tanks, pontoons and more." />
       </div>
 
       <div className="hidden md:flex flex-row w-[40rem] pt-20">
         <div className="flex flex-1 flex-col space-y-12 items-center">
-          <ServiceCard title="MINE PUMP" image={lifting} description="Complete Slurry or Mud removal, Dewatering removal, others." />
-          <ServiceCard title="DREDGING" image={dredging} description="All types of dredging including silting of the jetty area, silting of the path to the jetty, and others." />
+          <ServiceCard title="MINE PUMP" alt="mine pump" image={lifting} description="Complete Slurry or Mud removal, Dewatering removal, others." />
+          <ServiceCard title="DREDGING" alt="dredging" image={dredging} description="All types of dredging including silting of the jetty area, silting of the path to the jetty, and others." />
         </div>
         <div className="flex flex-1 flex-col space-y-12 items-center">
-          <ServiceCard title="SAND PUMP & RECLAMATION" image={reclamation} description="Pumping sand as construction sand, quartz sand, complete reclamation, others." />
-          <ServiceCard title="FABRICATION" image={fabrication} description="We can manufacture mine slurry pumps, dewatering pumps, sand pumps, slurry tanks, pontoons and more." />
+          <ServiceCard title="SAND PUMP & RECLAMATION" alt="sand pump" image={reclamation} description="Pumping sand as construction sand, quartz sand, complete reclamation, others." />
+          <ServiceCard title="FABRICATION" alt="fabrication" image={fabrication} description="We can manufacture mine slurry pumps, dewatering pumps, sand pumps, slurry tanks, pontoons and more." />
         </div>
       </div>
     </div>
@@ -54,12 +55,12 @@ const ServiceContent = () => (
       <div className="flex flex-1">
         <div className="flex flex-row w-[41rem]">
           <div className="relative top-5 flex flex-1 flex-col space-y-12 items-center">
-            <ServiceCard title="MINE PUMP" image={lifting} description="Complete Slurry or Mud removal, Dewatering removal, others." />
-            <ServiceCard title="DREDGING" image={dredging} description="All types of dredging including silting of the jetty area, silting of the path to the jetty, and others." />
+            <ServiceCard title="MINE PUMP" alt="mine pump" image={lifting} description="Complete Slurry or Mud removal, Dewatering removal, others." />
+            <ServiceCard title="DREDGING" alt="dredging" image={dredging} description="All types of dredging including silting of the jetty area, silting of the path to the jetty, and others." />
           </div>
           <div className="relative -top-5 flex flex-1 flex-col space-y-12 items-center">
-            <ServiceCard title="SAND PUMP & RECLAMATION" image={reclamation} description="Pumping sand as construction sand, quartz sand, complete reclamation, others." />
-            <ServiceCard title="FABRICATION" image={fabrication} description="We can manufacture mine slurry pumps, dewatering pumps, sand pumps, slurry tanks, pontoons and more." />
+            <ServiceCard title="SAND PUMP & RECLAMATION" alt="sand pump" image={reclamation} description="Pumping sand as construction sand, quartz sand, complete reclamation, others." />
+            <ServiceCard title="FABRICATION" alt="fabrication" image={fabrication} description="We can manufacture mine slurry pumps, dewatering pumps, sand pumps, slurry tanks, pontoons and more." />
           </div>
         </div>
       </div>

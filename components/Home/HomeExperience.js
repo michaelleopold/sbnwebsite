@@ -1,7 +1,3 @@
-import Image from 'next/image';
-
-import workshop from '../../public/images/workshop.jpg';
-
 /* eslint-disable max-len */
 const HomeExperience = () => (
   <div className="w-full flex justify-center py-28">
@@ -30,7 +26,7 @@ const HomeExperience = () => (
       </div>
 
       <div className="hidden lg:flex flex-1 relative w-96 h-72">
-        <Image alt="lifting booster pump" src={workshop} layout="fill" objectFit="cover" priority />
+        <img src="./images/workshop.jpg" alt="meeting" className="w-full h-full object-cover" />
       </div>
     </div>
   </div>

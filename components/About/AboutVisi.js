@@ -1,13 +1,10 @@
-import Image from 'next/image';
-import visi from '../../public/images/about/visi.png';
-
 /* eslint-disable max-len */
 const AboutVisi = () => (
   <div className="flex w-full py-28 justify-center xl:flex-row bg-gray-100">
     <div className="flex w-[30rem] md:w-[45rem] xl:w-[78rem] xl:flex-row">
       <div className="hidden xl:flex justify-center w-[25rem]">
         <div className="relative w-full h-[35rem]">
-          <Image alt="our story" src={visi} layout="fill" objectFit="cover" priority />
+          <img src="./images/about/visi.png" alt="excavator with submersible pump" className="w-full h-full object-cover" />
         </div>
       </div>
 

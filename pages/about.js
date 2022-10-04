@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Footer from '../components/Footer';
 
 // components
@@ -6,7 +5,6 @@ import Header from '../components/Header';
 import AboutUs from '../components/About/AboutUs';
 
 // images
-import meetingPic from '../public/images/meeting.jpg';
 import AboutVisi from '../components/About/AboutVisi';
 import AboutMisi from '../components/About/AboutMisi';
 
@@ -21,14 +19,7 @@ const About = () => (
         </div>
       </div>
       <div className="relative w-full h-170 bg-gray-600">
-        <Image
-          alt="meeting"
-          src={meetingPic}
-          layout="fill"
-          objectFit="cover"
-          className="brightness-35"
-          priority
-        />
+        <img src="./images/meeting.jpg" alt="meeting" className="w-full h-full brightness-35 object-cover" />
       </div>
     </section>
 

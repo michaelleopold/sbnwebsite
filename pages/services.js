@@ -1,10 +1,7 @@
-import Image from 'next/image';
-
 // components
 import Header from '../components/Header';
 
 // images
-import boosterPic from '../public/images/boosterpumpworkshop.png';
 import Footer from '../components/Footer';
 import ServiceContent from '../components/Service/ServiceContent';
 
@@ -19,14 +16,7 @@ const Services = () => (
         </div>
       </div>
       <div className="relative w-full h-170 bg-gray-600">
-        <Image
-          alt="meeting"
-          src={boosterPic}
-          layout="fill"
-          objectFit="cover"
-          className="brightness-35"
-          priority
-        />
+        <img src="./images/boosterpumpworkshop.png" alt="bosster pump in workshop" className="brightness-35 w-full h-full object-cover" />
       </div>
     </section>
 

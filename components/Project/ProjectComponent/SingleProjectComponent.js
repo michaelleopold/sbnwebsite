@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const SingleProjectComponent = ({
   year, companyName, description, projectName, image, alt,
 }) => (
@@ -12,7 +10,7 @@ const SingleProjectComponent = ({
       </div>
     </div>
     <div className="relative h-[20rem] w-[35rem] mt-5 rounded-md shadow-lg overflow-hidden">
-      <Image alt={alt} src={image} layout="fill" objectFit="fill" priority />
+      <img src={image} alt={alt} className="w-full h-full object-fill" />
     </div>
     <h1 className="self-center mt-6 font-bold text-purple-900 text-4xl">PROJECT</h1>
     <h1 className="self-center mt-6 font-bold text-purple-900 text-4xl text-center">{projectName}</h1>

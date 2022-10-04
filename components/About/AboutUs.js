@@ -1,7 +1,3 @@
-import Image from 'next/image';
-
-import aboutus from '../../public/images/about/aboutus.png';
-
 /* eslint-disable max-len */
 const StoryAbout = () => (
   <div className="flex w-full py-20 justify-center xl:flex-row">
@@ -22,7 +18,7 @@ const StoryAbout = () => (
 
       <div className="hidden xl:flex justify-center w-[25rem]">
         <div className="relative w-full h-[35rem]">
-          <Image alt="our story" src={aboutus} layout="fill" objectFit="cover" priority />
+          <img src="./images/about/aboutus.png" alt="sbn worker with submersible pump" className="w-full h-full object-cover" />
         </div>
       </div>
     </div>

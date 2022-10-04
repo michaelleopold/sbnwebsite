@@ -2,14 +2,12 @@
 // eslint-disable-next-line import/no-unresolved
 
 import Head from 'next/head';
-import Image from 'next/image';
 
 // components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 // public
-import boosterPic from '../public/images/boosterpump.png';
 import HomeHeaderContent from '../components/Home/HomeHeaderContent';
 import HomeServices from '../components/Home/HomeServices';
 import HomeExperience from '../components/Home/HomeExperience';
@@ -31,14 +29,7 @@ export default function Home() {
         </div>
 
         <div className="relative w-full h-170 bg-gray-600">
-          <Image
-            alt="booster pump in coal mining"
-            src={boosterPic}
-            layout="fill"
-            objectFit="cover"
-            className="brightness-25"
-            priority
-          />
+          <img src='./images/boosterpump.png' alt='booster pump in coal mining' className="w-full h-full object-cover brightness-25" />
         </div>
       </section>
 

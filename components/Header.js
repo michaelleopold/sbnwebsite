@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useState, memo } from 'react';
-import sbnlogo from '../public/logos/sbn.png';
 
 const Header = ({ darkMode = false }) => {
   const router = useRouter();
@@ -12,11 +10,7 @@ const Header = ({ darkMode = false }) => {
     <>
       <div className="hidden lg:flex items-center justify-between">
         <div className="w-40 ml-24 flex items-center">
-          <Image
-            alt="samudera biru nusantara logo"
-            src={sbnlogo}
-            className="z-10"
-          />
+          <img src="./logos/sbn.png" alt="PT. Samudera Biru Nusantara logo" className="w-full h-full z-10" />
         </div>
         <div className="flex flex-row space-x-6 text-white font-mono pr-24">
           <button className={`py-1 px-3 rounded-xl ${router.route === '/' ? 'bg-blue-400' : ''}`} type="button" onClick={() => router.push('/')}>
@@ -39,11 +33,7 @@ const Header = ({ darkMode = false }) => {
 
       <div className="lg:hidden flex justify-between items-center w-full">
         <div className="ml-10 w-28 md:w-40 flex items-center">
-          <Image
-            alt="samudera biru nusantara logo"
-            src={sbnlogo}
-            className="z-10 w-28 h-10"
-          />
+          <img src="./logos/sbn.png" alt="PT. Samudera Biru Nusantara logo" className="w-28 h-10 z-10" />
         </div>
         <div className="pr-10">
           <button type="button" onClick={() => {
@@ -57,10 +47,7 @@ const Header = ({ darkMode = false }) => {
       <div className={`lg:hidden z-20 fixed h-[35rem] inset-x-0 top-0 bg-gray-800 transform ${mobileMenuClicked ? 'translate-x-0' : '-translate-x-full'} transition duration-300 ease-in-out flex flex-col shadow-sm`}>
         <div className="flex flex-row w-full items-center justify-between shadow-md shadow-gray-900 px-10 py-2">
           <div className="w-[7rem] flex justify-center items-center">
-            <Image
-              alt="samudera biru nusantara logo"
-              src={sbnlogo}
-            />
+            <img src="./logos/sbn.png" alt="PT. Samudera Biru Nusantara logo" className="w-full h-full" />
           </div>
           <button type="button" onClick={() => {
             setMobileMenuClicked(false);

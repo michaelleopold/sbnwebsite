@@ -1,14 +1,14 @@
 /* eslint-disable max-len */
-import Image from 'next/image';
 
-import belawan from '../../public/images/projects/project-belawan.png';
-import separimalinau from '../../public/images/projects/project-separi-dan-malinau.png';
-import bengalonasam from '../../public/images/projects/project-asam-asam-dan-bengalon.jpg';
-import amborawang from '../../public/images/projects/project-jetty-ambalat.jpg';
-import dondang from '../../public/images/projects/project-jetty-dondang.jpg';
-import melak from '../../public/images/projects/project-melak.jpg';
 import ProjectHistory from './ProjectHistory';
 import SingleProjectComponent from './ProjectComponent/SingleProjectComponent';
+
+const belawan = './images/projects/project-belawan.png';
+const separimalinau = './images/projects/project-separi-dan-malinau.png';
+const bengalonasam = './images/projects/project-asam-asam-dan-bengalon.jpg';
+const amborawang = './images/projects/project-jetty-ambalat.jpg';
+const dondang = './images/projects/project-jetty-dondang.jpg';
+const melak = './images/projects/project-melak.jpg';
 
 const ProjectListVertical = () => (
   <div className="w-full py-20 xl:pt-28 xl:pb-[30rem] flex flex-col justify-center items-center bg-white">
@@ -24,7 +24,7 @@ const ProjectListVertical = () => (
           <h1 className="font-medium text-2xl text-gray-900">Project Dredging - PT. Wika-Hutama Jo (WIKA)</h1>
           <h3 className="font-light mb-3 text-gray-500 md:text-lg">(Lokasi Belawan, Medan) - 2018</h3>
           <div className="relative h-60 md:h-80 w-[28rem] md:w-[35rem] rounded-md shadow-lg overflow-hidden">
-            <Image alt="lifting booster pump" src={belawan} layout="fill" objectFit="fill" priority />
+            <img src={belawan} alt="PT. WIKA Dredging Project" className="w-full h-full object-fill" />
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const ProjectListVertical = () => (
           <h1 className="font-medium text-2xl text-gray-900">Project Slurry Removal - PT. Kayan Putra Utama Coal (KPUC)</h1>
           <h3 className="font-light mb-3 text-gray-500">(Lokasi Separi, Kalimantan Timur & Malinau, Kalimantan Utara) - 2019</h3>
           <div className="relative h-60 md:h-80 w-[28rem] md:w-[35rem] rounded-md shadow-lg overflow-hidden">
-            <Image alt="lifting booster pump" src={separimalinau} layout="fill" objectFit="fill" priority />
+            <img src={separimalinau} alt="PT. KPUC Slurry Removal Project" className="w-full h-full object-fill" />
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const ProjectListVertical = () => (
           <h1 className="font-medium text-2xl text-gray-900">Project Slurry Removal - PT. Dharma Henwa (DH)</h1>
           <h3 className="font-light mb-3 text-gray-500">(Lokasi Asam-Asam, Kalimantan Selatan & Bengalon, Kalimantan Timur) - 2019</h3>
           <div className="relative h-60 md:h-80 w-[28rem] md:w-[35rem] rounded-md shadow-lg overflow-hidden">
-            <Image alt="lifting booster pump" src={bengalonasam} layout="fill" objectFit="fill" priority />
+            <img src={bengalonasam} alt="PT. DH Slurry Removal Project" className="w-full h-full object-fill" />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const ProjectListVertical = () => (
           <h1 className="font-medium text-2xl text-gray-900">Project Jetty Dredging - PT. TBS</h1>
           <h3 className="font-light mb-3 text-gray-500">(Lokasi Amborawang Laut, Kalimantan Timur) - 2021</h3>
           <div className="relative h-60 md:h-80 w-[28rem] md:w-[35rem] rounded-md shadow-lg overflow-hidden">
-            <Image alt="lifting booster pump" src={amborawang} layout="fill" objectFit="fill" priority />
+            <img src={dondang} alt="PT. TBS Jetty Dredging Project" className="w-full h-full object-fill" />
           </div>
         </div>
 
@@ -56,7 +56,7 @@ const ProjectListVertical = () => (
           <h1 className="font-medium text-2xl text-gray-900">Project Jetty Dredging - PT. Globalindo Inti Energi</h1>
           <h3 className="font-light mb-3 text-gray-500">(Lokasi Dondang, Kalimantan Timur) - 2021</h3>
           <div className="relative h-60 md:h-80 w-[28rem] md:w-[35rem] rounded-md shadow-lg overflow-hidden">
-            <Image alt="lifting booster pump" src={dondang} layout="fill" objectFit="fill" priority />
+            <img src={amborawang} alt="PT. GIE Jetty Dredging Project" className="w-full h-full object-fill" />
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const ProjectListVertical = () => (
           <h1 className="font-medium text-2xl text-gray-900">Project Slurry Removal & Dewatering - PT. Jomima Baramulia Abadi</h1>
           <h3 className="font-light mb-3 text-gray-500">(Lokasi Melak, Kalimantan Timur) - 2021</h3>
           <div className="relative h-60 md:h-80 w-[28rem] md:w-[35rem] rounded-md shadow-lg overflow-hidden">
-            <Image alt="lifting booster pump" src={melak} layout="fill" objectFit="fill" priority />
+            <img src={melak} alt="PT. JBA Slurry & Dewatering Removal Project" className="w-full h-full object-fill" />
           </div>
         </div>
 
@@ -74,7 +74,7 @@ const ProjectListVertical = () => (
         <ProjectHistory />
 
         <div className="absolute top-24 right-[22rem] flex flex-col w-[35rem]">
-          <SingleProjectComponent image={belawan} alt="PT. WIKA Slurry Jetty Dredging Project" year="2018" companyName="PT. WIKA-HUTAMA JO" description="Working as Sub-Contractor for Dredging Belawan Jetty Phase 2 in Belawan, North Sumatera." projectName="JETTY DREDGING" />
+          <SingleProjectComponent image={belawan} alt="PT. WIKA Jetty Dredging Project" year="2018" companyName="PT. WIKA-HUTAMA JO" description="Working as Sub-Contractor for Dredging Belawan Jetty Phase 2 in Belawan, North Sumatera." projectName="JETTY DREDGING" />
         </div>
 
         <div className="absolute top-[43rem] left-[22rem] flex flex-col w-[35rem]">

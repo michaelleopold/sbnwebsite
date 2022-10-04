@@ -1,12 +1,9 @@
 // components
-import Image from 'next/image';
 import ContactInformations from '../components/Contact/ContactInformations';
 import ContactLocation from '../components/Contact/ContactLocation';
 import ContactMessage from '../components/Contact/ContactMessage';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-
-import contactus from '../public/images/contactus.jpg';
 
 const Contact = () => (
   <div className="min-h-screen w-full bg-white">
@@ -27,14 +24,7 @@ const Contact = () => (
         </a>
       </div>
       <div className="relative w-full h-170 bg-gray-600">
-        <Image
-          alt="meeting"
-          src={contactus}
-          layout="fill"
-          objectFit="cover"
-          className="brightness-35"
-          priority
-        />
+        <img src="./images/contactus.jpg" alt="contact us" className="brightness-35 w-full h-full object-cover" />
       </div>
     </section>
 

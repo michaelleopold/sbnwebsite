@@ -1,7 +1,3 @@
-import Image from 'next/image';
-
-import misi from '../../public/images/about/misi.png';
-
 /* eslint-disable max-len */
 const AboutMisi = () => (
   <div className="flex w-full py-28 justify-center xl:flex-row">
@@ -25,7 +21,7 @@ const AboutMisi = () => (
 
       <div className="hidden xl:flex justify-center w-[36rem] items-end">
         <div className="relative w-full h-[20rem]">
-          <Image alt="our story" src={misi} layout="fill" objectFit="cover" priority />
+          <img alt="excavator with submersible pump" src="./images/about/misi.png" className="object-cover w-full h-full" />
         </div>
       </div>
     </div>

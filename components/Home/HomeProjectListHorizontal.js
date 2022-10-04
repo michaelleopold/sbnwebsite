@@ -1,27 +1,20 @@
-import Image from 'next/image';
 import { useRouter } from 'next/router';
-
-import belawan from '../../public/images/projects/project-belawan.png';
-import separimalinau from '../../public/images/projects/project-separi-dan-malinau.png';
-import bengalonasam from '../../public/images/projects/project-asam-asam-dan-bengalon.jpg';
-import dondang from '../../public/images/projects/project-jetty-dondang.jpg';
-import melak from '../../public/images/projects/project-melak.jpg';
 
 const listProjects = [
   {
-    id: 1, title: 'PT. Wika-Hutama Jo (WIKA)', description: 'Working as Sub-Contractor for Dredging Belawan Jetty Phase 2 in Belawan, North Sumatera.', img: belawan,
+    id: 1, title: 'PT. Wika-Hutama Jo (WIKA)', alt: 'project di PT. WIKA', description: 'Working as Sub-Contractor for Dredging Belawan Jetty Phase 2 in Belawan, North Sumatera.', img: './images/projects/project-belawan.png',
   },
   {
-    id: 2, title: 'PT. KALTIM PRIMA UTAMA COAL', description: 'Working as Contractor for Slurry Removal in 2 sites namely Separi, East Kalimantan and Malinau, North Kalimantan.', img: separimalinau,
+    id: 2, title: 'PT. KALTIM PRIMA UTAMA COAL', alt: 'project di PT. KPUC', description: 'Working as Contractor for Slurry Removal in 2 sites namely Separi, East Kalimantan and Malinau, North Kalimantan.', img: './images/projects/project-separi-dan-malinau.png',
   },
   {
-    id: 3, title: 'PT. DHARMA HENWA', description: 'Working as Sub-Contractor for Slurry Removal in 2 sites namely Bengalon, East Kalimantan and Asam-asam, South Kalimantan.', img: bengalonasam,
+    id: 3, title: 'PT. DHARMA HENWA', alt: 'projet di PT. DH', description: 'Working as Sub-Contractor for Slurry Removal in 2 sites namely Bengalon, East Kalimantan and Asam-asam, South Kalimantan.', img: './images/projects/project-asam-asam-dan-bengalon.jpg',
   },
   {
-    id: 4, title: 'PT. GLOBALINDO INTI ENERGIE', description: 'Working as Contractor for Jetty Dredging in Dondang, East Kalimantan.', img: dondang,
+    id: 4, title: 'PT. GLOBALINDO INTI ENERGIE', alt: 'project di PT. GIE', description: 'Working as Contractor for Jetty Dredging in Dondang, East Kalimantan.', img: './images/projects/project-jetty-dondang.jpg',
   },
   {
-    id: 5, title: 'PT. JOMIMA BARAMULIA ABADI', description: 'Working as Contractor for Slurry and Dewatering Removal in Melak, East Kalimantan.', img: melak,
+    id: 5, title: 'PT. JOMIMA BARAMULIA ABADI', alt: 'project di PT. JBA', description: 'Working as Contractor for Slurry and Dewatering Removal in Melak, East Kalimantan.', img: './images/projects/project-melak.jpg',
   },
 ];
 
@@ -52,7 +45,7 @@ const HomeProjectListHorizontal = () => {
                 <div
                   className="relative w-72 h-96 max-w-xs overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer"
                 >
-                  <Image src={e.img} layout="fill" objectFit="cover" priority />
+                  <img src={e.img} alt={e.alt} className="w-full h-full object-cover" />
                 </div>
                 <div className="mt-6">
                   <h1 className="font-bold tracking-wide mb-1">{e.title}</h1>
@@ -91,7 +84,7 @@ const HomeProjectListHorizontal = () => {
                 <div
                   className="relative w-72 h-96 max-w-xs overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer"
                 >
-                  <Image src={e.img} layout="fill" objectFit="cover" priority />
+                  <img src={e.img} alt={e.alt} className="w-full h-full object-cover" />
                 </div>
                 <div className="mt-6">
                   <h1 className="font-bold tracking-wide mb-1">{e.title}</h1>

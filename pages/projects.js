@@ -1,12 +1,8 @@
-import Image from 'next/image';
 import Footer from '../components/Footer';
 
 // components
 import Header from '../components/Header';
 import ProjectListVertical from '../components/Project/ProjectListVertical';
-
-// images
-import pipepumpinstallmentPic from '../public/images/pipepumpinstallment.jpg';
 
 const Projects = () => (
   <div className="min-h-screen w-full bg-white">
@@ -19,14 +15,7 @@ const Projects = () => (
         </div>
       </div>
       <div className="relative w-full h-170 bg-gray-600">
-        <Image
-          alt="meeting"
-          src={pipepumpinstallmentPic}
-          layout="fill"
-          objectFit="cover"
-          className="brightness-35"
-          priority
-        />
+        <img src="./images/pipepumpinstallment.jpg" alt="hdpe pipe installment" className="brightness-35 w-full h-full object-cover" />
       </div>
     </section>
 
