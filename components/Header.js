@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { useState, memo } from 'react';
 
 const Header = ({ darkMode = false }) => {
@@ -13,21 +14,21 @@ const Header = ({ darkMode = false }) => {
           <img src="./logos/sbn.png" alt="PT. Samudera Biru Nusantara logo" className="w-full h-full z-10" />
         </div>
         <div className="flex flex-row space-x-6 text-white font-mono pr-24">
-          <button className={`py-1 px-3 rounded-xl ${router.route === '/' ? 'bg-blue-400' : ''}`} type="button" onClick={() => router.push('/')}>
-            <h1 className={`hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>Home</h1>
-          </button>
-          <button className={`py-1 px-3 rounded-xl ${router.route === '/services' ? 'bg-blue-400' : ''}`} type="button" onClick={() => router.push('/services')}>
-            <h1 className={`hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>Services</h1>
-          </button>
-          <button className={`py-1 px-3 rounded-xl ${router.route === '/projects' ? 'bg-blue-400' : ''}`} type="button" onClick={() => router.push('/projects')}>
-            <h1 className={`hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>Projects</h1>
-          </button>
-          <button className={`py-1 px-3 rounded-xl ${router.route === '/about' ? 'bg-blue-400' : ''}`} type="button" onClick={() => router.push('/about')}>
-            <h1 className={`hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>About</h1>
-          </button>
-          <button className={`py-1 px-3 rounded-xl ${router.route === '/contact' ? 'bg-blue-400' : ''}`} type="button" onClick={() => router.push('/contact')}>
-            <h1 className={`hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>Contact</h1>
-          </button>
+          <h1 className={`py-1 px-3 rounded-xl ${router.route === '/' ? 'bg-blue-400' : ''} hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>
+            <Link href="/">Home</Link>
+          </h1>
+          <h1 className={`py-1 px-3 rounded-xl ${router.route === '/services' ? 'bg-blue-400' : ''} hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>
+            <Link href="/services">Services</Link>
+          </h1>
+          <h1 className={`py-1 px-3 rounded-xl ${router.route === '/projects' ? 'bg-blue-400' : ''} hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>
+            <Link href="/projects">Projects</Link>
+          </h1>
+          <h1 className={`py-1 px-3 rounded-xl ${router.route === '/about' ? 'bg-blue-400' : ''} hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>
+            <Link href="/about">About</Link>
+          </h1>
+          <h1 className={`py-1 px-3 rounded-xl ${router.route === '/contact' ? 'bg-blue-400' : ''} hover:cursor-pointer active:opacity-30 ${darkMode ? 'text-black' : 'text-white'}`}>
+            <Link href="/contact">Contact</Link>
+          </h1>
         </div>
       </div>
 
@@ -56,21 +57,36 @@ const Header = ({ darkMode = false }) => {
           </button>
         </div>
         <div className="flex flex-col w-full items-start space-y-5 p-5">
-          <button type="button" onClick={() => router.push('/')}>
+          <h1 className="text-white text-lg">
+            <Link href="/">Home</Link>
+          </h1>
+          <h1 className="text-white text-lg">
+            <Link href="/services">Services</Link>
+          </h1>
+          <h1 className="text-white text-lg">
+            <Link href="/projects">Projects</Link>
+          </h1>
+          <h1 className="text-white text-lg">
+            <Link href="/about">About</Link>
+          </h1>
+          <h1 className="text-white text-lg">
+            <Link href="/contact">Contact</Link>
+          </h1>
+          {/* <button type="button" onClick={() => router.push('/')}>
             <h1 className="text-white text-lg">Home</h1>
-          </button>
-          <button type="button" onClick={() => router.push('/services')}>
+          </button> */}
+          {/* <button type="button" onClick={() => router.push('/services')}>
             <h1 className="text-white text-lg">Services</h1>
-          </button>
-          <button type="button" onClick={() => router.push('/projects')}>
+          </button> */}
+          {/* <button type="button" onClick={() => router.push('/projects')}>
             <h1 className="text-white text-lg">Projects</h1>
-          </button>
-          <button type="button" onClick={() => router.push('/about')}>
+          </button> */}
+          {/* <button type="button" onClick={() => router.push('/about')}>
             <h1 className="text-white text-lg">About</h1>
           </button>
           <button type="button" onClick={() => router.push('/contact')}>
             <h1 className="text-white text-lg">Contact</h1>
-          </button>
+          </button> */}
         </div>
       </div>
     </>
